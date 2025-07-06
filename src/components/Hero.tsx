@@ -14,7 +14,6 @@ const Hero = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!email || !email.includes('@')) {
       toast({
         title: 'Invalid email',
