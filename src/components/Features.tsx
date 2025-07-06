@@ -33,22 +33,22 @@ const Features = () => {
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4 opacity-0 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             Everything you need when we launch
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto opacity-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Built by real estate investors who understand your pain points. Our AI will handle the tedious work so you can focus on growing your portfolio.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-500 border-gray-200 hover:border-green-200 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-green-200 opacity-0 animate-slide-up" style={{ animationDelay: `${0.3 + index * 0.1}s` }}>
               <CardContent className="p-6">
                 <div className="mb-4">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 group-hover:bg-green-200 transition-all duration-300 group-hover:scale-110">
-                    <feature.icon className="w-6 h-6 text-green-600 group-hover:animate-pulse" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 group-hover:bg-green-200 transition-colors duration-300">
+                    <feature.icon className="w-6 h-6 text-green-600" />
                   </div>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-green-700 transition-colors">
@@ -58,7 +58,7 @@ const Features = () => {
                   {feature.description}
                 </p>
                 <div className="inline-flex items-center text-sm font-medium text-green-600 group-hover:text-green-700 transition-colors">
-                  <span className="mr-1 animate-pulse">✓</span>
+                  <span className="mr-1">✓</span>
                   {feature.benefit}
                 </div>
               </CardContent>
