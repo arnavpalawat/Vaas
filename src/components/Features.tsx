@@ -38,7 +38,7 @@ const Features = () => {
             Everything you need when we launch
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto opacity-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Built by real estate investors who understand your pain points. Our AI will handle the tedious work so you can focus on growing your portfolio.
+            Built by those who understand your pain points. Our AI will handle the tedious work so you can focus on growing your portfolio.
           </p>
         </div>
 
