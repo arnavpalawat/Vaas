@@ -28,7 +28,7 @@ const EarlyAccess = () => {
           <div className="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 opacity-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <div className="text-2xl mb-2">🎯</div>
             <h3 className="font-semibold text-white mb-2">Free onboarding</h3>
-            <p className="text-green-100 text-sm">Skip the $299 setup fee—we'll migrate your data for free</p>
+            <p className="text-green-100 text-sm">Skip the $149 setup fee—we'll migrate your data for free</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 opacity-0 animate-slide-up" style={{ animationDelay: '0.5s' }}>

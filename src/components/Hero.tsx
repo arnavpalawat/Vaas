@@ -111,7 +111,7 @@ const Hero = () => {
             </form>
 
             <p className="text-sm text-gray-500 mb-12 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-              Join today and skip the <span className="font-semibold text-gray-700">$299 onboarding fee</span> when we launch
+              Join today and skip the <span className="font-semibold text-gray-700">$149 onboarding fee</span> when we launch
             </p>
 
             <div className="flex items-center justify-center gap-8 text-sm text-gray-500 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
