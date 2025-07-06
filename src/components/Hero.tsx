@@ -35,7 +35,7 @@ const Hero = () => {
 
       toast({
         title: "Welcome to the waitlist! 🎉",
-        description: "You'll be among the first to access Vaas.ai when we launch.",
+        description: "You'll be among the first to access vaas.ai when we launch.",
         duration: 5000,
       });
       
@@ -83,7 +83,7 @@ const Hero = () => {
           </p>
           
           <p className="mx-auto max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            Vaas.ai will automate tax filings, rent collection, and tenant calls—so you don't have to. 
+            vaas.ai will automate tax filings, rent collection, and tenant calls—so you don't have to. 
             <span className="font-semibold text-gray-900"> For Investors… By Investors.</span>
           </p>
 

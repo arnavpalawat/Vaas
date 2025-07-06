@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3">
                 <span className="text-white font-bold text-lg">V</span>
               </div>
-              <span className="text-xl font-bold">Vaas.ai</span>
+              <span className="text-xl font-bold">vaas.ai</span>
             </div>
             <p className="text-gray-400 max-w-md mb-6">
               AI-powered property management for real estate investors. 
@@ -48,7 +48,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="mailto:hello@vaasai.co" className="hover:text-white transition-colors">hello@vaasai.co</a></li>
+              <li><a href="mailto:hello@vaas.ai" className="hover:text-white transition-colors">hello@vaas.ai</a></li>
             </ul>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Footer = () => {
         
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Vaas.ai. All rights reserved.
+            © 2024 vaas.ai. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
