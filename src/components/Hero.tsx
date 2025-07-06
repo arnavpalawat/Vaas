@@ -8,12 +8,13 @@ import { db } from '@/../firebase';
 import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 
 const Hero = () => {
-  const [email, setEmail] = useState('');
+  const [email, sfirebase loginetEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!email || !email.includes('@')) {
       toast({
         title: 'Invalid email',
