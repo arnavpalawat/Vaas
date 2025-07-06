@@ -35,7 +35,7 @@ const Hero = () => {
 
       toast({
         title: "Welcome to the waitlist! 🎉",
-        description: "You'll be among the first to access Vaas.ai and claim your 2 months free.",
+        description: "You'll be among the first to access Vaas.ai when we launch.",
         duration: 5000,
       });
       
@@ -63,57 +63,64 @@ const Hero = () => {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white to-green-50/30 py-20 lg:py-32">
-      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]" />
+      {/* Animated background grid */}
+      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] animate-pulse" />
+      
+      {/* Floating orbs animation */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-32 w-80 h-80 bg-green-200/20 rounded-full mix-blend-multiply filter blur-xl animate-bounce"></div>
+        <div className="absolute -bottom-32 -left-40 w-80 h-80 bg-blue-200/20 rounded-full mix-blend-multiply filter blur-xl animate-bounce" style={{ animationDelay: '2s' }}></div>
+      </div>
       
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-800 mb-6">
-            <span className="mr-2">🚀</span>
-            Limited Pre-Release Access Available
+          <div className="inline-flex items-center rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-800 mb-6 animate-fade-in">
+            <span className="mr-2 animate-pulse">🚀</span>
+            Coming Soon - Limited Pre-Release Access
           </div>
           
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl animate-scale-in">
             AI-Powered Property 
-            <span className="block text-green-600">Management</span>
-            <span className="block text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-700 mt-2">
+            <span className="block text-green-600 animate-fade-in" style={{ animationDelay: '0.2s' }}>Management</span>
+            <span className="block text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-700 mt-2 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               Smarter, Faster, Easier.
             </span>
           </h1>
           
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
-            Vaas.ai automates tax filings, rent collection, and tenant calls—so you don't have to. 
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            Vaas.ai will automate tax filings, rent collection, and tenant calls—so you don't have to. 
             <span className="font-semibold text-gray-900"> For Investors… By Investors.</span>
           </p>
 
-          <form onSubmit={handleSubmit} className="mx-auto mt-10 flex max-w-md flex-col gap-4 sm:flex-row">
+          <form onSubmit={handleSubmit} className="mx-auto mt-10 flex max-w-md flex-col gap-4 sm:flex-row animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <Input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 rounded-lg border-gray-300 px-4 py-3 text-base focus:border-green-500 focus:ring-green-500"
+              className="flex-1 rounded-lg border-gray-300 px-4 py-3 text-base focus:border-green-500 focus:ring-green-500 transition-all duration-200 hover:border-green-400"
               required
             />
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-base font-semibold rounded-lg transition-colors"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-base font-semibold rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
             >
-              {isSubmitting ? 'Joining...' : 'Get 2 Months Free'}
+              {isSubmitting ? 'Joining...' : 'Get Early Access'}
             </Button>
           </form>
 
-          <p className="mt-4 text-sm text-gray-500">
-            Join today and skip the <span className="font-semibold text-gray-700">$299 onboarding fee</span>
+          <p className="mt-4 text-sm text-gray-500 animate-fade-in" style={{ animationDelay: '1s' }}>
+            Join today and skip the <span className="font-semibold text-gray-700">$299 onboarding fee</span> when we launch
           </p>
 
-          <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-500">
-            <div className="flex items-center gap-2">
-              <div className="h-2 w-2 rounded-full bg-green-500" />
+          <div className="mt-12 flex items-center justify-center gap-8 text-sm text-gray-500 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+            <div className="flex items-center gap-2 hover:text-green-600 transition-colors">
+              <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
               No setup fees during pre-release
             </div>
-            <div className="flex items-center gap-2">
-              <div className="h-2 w-2 rounded-full bg-green-500" />
+            <div className="flex items-center gap-2 hover:text-green-600 transition-colors">
+              <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" style={{ animationDelay: '0.5s' }} />
               Free onboarding for waitlist members
             </div>
           </div>
