@@ -8,7 +8,7 @@ import { db } from '@/../firebase';
 import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 
 const Hero = () => {
-  const [email, sfirebase loginetEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
